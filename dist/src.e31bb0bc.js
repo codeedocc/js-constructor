@@ -583,9 +583,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.App = void 0;
 
-var _site = require("../classes/site");
+var _site = require("./site");
 
-var _sidebar = require("../classes/sidebar");
+var _sidebar = require("./sidebar");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -622,7 +622,7 @@ var App = /*#__PURE__*/function () {
 }();
 
 exports.App = App;
-},{"../classes/site":"classes/site.js","../classes/sidebar":"classes/sidebar.js"}],"index.js":[function(require,module,exports) {
+},{"./site":"classes/site.js","./sidebar":"classes/sidebar.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _model = require("./model");
@@ -660,7 +660,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61046" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61559" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
